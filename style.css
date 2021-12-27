@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+body section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #051b61;
+    z-index: 5;
+    mix-blend-mode: color;
+}
+
+#road {
+    z-index: 3;
+}
+
+#mountain {
+    z-index: 1;
+    top: 150px;
+}
+
+#sky {
+    z-index: 0;
+}
+
+#moon {
+    z-index: 1;
+}
+
+#midnight {
+    top: 120px;
+    position: relative;
+    color: #ffffff;
+    font-size: 12rem;
+    z-index: 2;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.welcome {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    font-size: 10rem;
+    margin-top: 10%;
+    padding-left: 70px; 
+    padding-right: 70px; 
+}
+
+.welcome p {
+    margin-top: 50px;
+    font-weight: normal;
+    line-height: 1.6;
+    padding-left: 70px; 
+    padding-right: 70px; 
+}
